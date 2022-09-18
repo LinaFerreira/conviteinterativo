@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #03102c;
+}
+:root{
+    --font-p: 'Berkshire Swash', cursive;
+    --font-g:'Quicksand', sans-serif;
+    --color1:#0f9ed6;
+    --color2: #19a719;
+    --color3: #fa9806; 
+}
+
+.envolve{
+width: 375px;
+height: 100vh;
+background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dW5pdmVyc2UlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+background-size: auto;
+margin: 0 auto;
+}
+
+/* texto */
+p{
+   font-family: var(--font-g); 
+   font-weight: 500;
+   margin-left: 10px;
+}
+h1{
+    font-family: var(--font-p);
+    
+    padding-top: 30px;
+    text-align: center;
+    color:var(--color3);
+    font-size: 40px;
+    text-shadow: 50px;
+}
+h2{
+    font-family: var(--font-g);
+    
+    padding-top: 30px;
+    text-align: center;
+    color:white;
+    font-size: 18px;
+    text-shadow: 50px;
+}
+a{
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.subtitulo{
+    text-align: center;
+    color: white;
+}
+.seta{
+    width: 50px;
+    position:relative;
+    margin-bottom: 150px;
+    animation-name: arrow;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    margin-left: 20px;
+
+   
+
+}
+h3{
+    color:rgb(131, 128, 128);
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-family: var(--font-g);
+    text-align: center;
+ 
+}
+.seta2{
+    width: 50px;
+    /* position:relative; */
+    margin-left: 165px;
+    margin-top: 40px;
+    animation-name: arrow;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    
+
+  
+
+}
+/* imagens */
+
+.pistinha{
+    width:400px;
+    position: absolute;
+    text-align: center;
+    margin-top:-46px;
+    width:375px ;
+    
+}
+
+.logo{
+   width:320px;
+   margin-left: 35px;
+
+}
+.jcarro{
+    position: relative;
+    width: 150px;
+    padding-bottom: -900px;
+    animation-name: pulo;
+    animation-duration: 15000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+}
+
+.vaca{
+   width:150px;
+   animation-name: rodar;
+   animation-duration: 15000ms;
+   animation-iteration-count: infinite;
+}
+
+button{
+    background-color: var(--color3);
+    border: none;
+    width: 95px;
+    height: 30px;
+    border-radius: 5px;
+    display:flexbox;
+    color: black;
+   
+}
+button a{
+    text-decoration: none;
+    color:#5c2d08;
+}
+button:hover{
+    background-color: #1c88ee;
+}
+.btn{
+
+    margin-left: 90px;
+    margin-top: 50px;
+   
+
+}
+.jose{
+    width:150px;
+    animation-name: batevolta;
+    animation-duration: 100000ms;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+
+
+}
+.laranja{
+    width:50px;
+    margin-left: 2px;
+    animation-name: lado;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+.carro{
+    width:100px;
+    animation-name: lado2;
+    animation-duration: 120000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+
+.parte3   {
+    width: 375px;
+    background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dW5pdmVyc2UlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: auto;
+    margin: 0 auto;
+
+    background-color: white;
+    width:375px;
+    margin: 0 auto;
+    height: 100vh;
+}  
+
+.parte3 p{
+    background-color: white;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    margin:0 auto;
+    padding: 10px;
+      
+}
+.parte3{
+    height: 380px;
+}
+
+.parte2{
+    height: 340px;
+    
+    background-color: white; 
+}
+
+.parte2 p{
+    margin-top: 10px;
+    background-color:var(--color3);
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    margin:0 auto;
+    padding: 10px;
+   
+    
+}
+
+/* animação */
+
+@keyframes lado {
+    0%{
+        transform:translateX(-50px);
+        
+
+    }
+
+    30%{
+        transform:translateY(120px);
+        
+        
+    }
+    100%{
+        transform:translateX(340px);
+        
+    }
+}
+
+@keyframes rodar {
+    0%{
+        
+        transform:rotate(0)
+
+    }
+    
+    100%{
+        transform:rotate(360deg);
+        
+    }
+}
+
+@keyframes batevolta {
+    0%{
+        transform:translateY(-800px);
+
+    }
+    60%{
+        transform:translateX(260px);
+
+    }
+    70%{
+        transform:rotateY(360deg);
+    }
+
+    100%{
+        transform:translateY(400px);
+    }
+}
+@keyframes lado2 {
+    0%{
+        transform:translateX(100px);
+        
+
+    }
+    /* 5%{
+        transform:translateX(0px);
+        
+
+    } */
+    10%{
+        transform:rotate(25deg)
+
+    }
+    50%{
+        transform:translateY(-500px)
+    }
+      
+    100%{
+        transform:translateX(-330px);
+        
+    }
+}
+@keyframes arrow {
+    0%{
+        transform: translateY(00px);
+    }
+    100%{
+        transform:translateY(50px);
+    }
+}
+@keyframes pulo {
+    0%{
+        transform: translateX(280px);
+    }
+   
+    
+    100%{
+        transform: translateX(-180px);
+    }
+    
+}
